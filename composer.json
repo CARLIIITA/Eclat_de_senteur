@@ -1,0 +1,10 @@
+{
+    "name": "utilisateur/eclat_de_senteur",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Utilisateur\\EclatDeSenteur\\": "src/"
+        }
+    },
+    "require": {}
+}

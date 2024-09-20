@@ -1,5 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head.php'; ?>
-
+<?= $partials[0] ?>
 <header>
     <div id="head">
         <!--Ici se trouve mon Logo -->
@@ -12,7 +11,8 @@
                 id="iconepanier"
                 src="../assets/icones/iconecaddie.png"
                 alt="iconepanier" />
-            <p class="textepanier">Mon panier</p>
+            <p class="textepanier"><?= isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; ?></p>
+
         </div>
     </div>
     <!--Ici se trouve mes boutons se connecter et s'inscrire -->
@@ -36,4 +36,4 @@
 
 <?= $content ?>
 
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
+<?= $partials[1] ?>

@@ -11,5 +11,9 @@ abstract class Controller
         $view = new view($view, $datas, $layout);
         $view->render();
     }
-    protected function redirect() {}
+    protected function redirect($path)
+    {
+        header("Location: $path");
+        exit();
+    }
 }

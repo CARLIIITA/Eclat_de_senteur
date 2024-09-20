@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use App\Controllers\Page404Controller;
+
 class Router
 {
     private $routes = [];
@@ -10,6 +12,7 @@ class Router
         $this->routes[$uri] = ['Controller' => $Controller, 'method' => $method];
         return $this;
     }
+
     public function dispatch($uri)
     {
         foreach ($this->routes as $uriPath => $infos) {

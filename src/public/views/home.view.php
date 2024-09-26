@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eclat2Senteur</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--Ici se trouve mon header -->
-    <header>
-      <div id="head">
-        <!--Ici se trouve mon Logo -->
-        <div>
-          <img id="logo" src="/assets/logo/parfumLogo.png" alt="logo" />
-        </div>
-        <!--Ici se trouve mon icone du panier -->
-        <div class="panier">
-          <img
-            id="iconepanier"
-            src="/assets/icones/iconecaddie.png"
-            alt="iconepanier"
-          />
-          <p class="textepanier">Mon panier</p>
-        </div>
-      </div>
-      <!--Ici se trouve mes boutons se connecter et s'inscrire -->
-      <div id="groupebouton">
-        <div class="boutonsDoubles">
-          <button href="#" class="bouton">Se Connecter</button>
-          <button href="#" class="bouton">S'inscrire</button>
-        </div>
-      </div>
-      <!--Ici commence ma nav -->
-      <nav id="naviguation">
-        <li><a href="#Parfums">Parfums</a></li>
-        <li><a href="#Brumes">Brumes</a></li>
-        <li><a href="#Huiles">Huiles</a></li>
-        <li><a href="#Muscs">Muscs</a></li>
-        <li><a href="#LaRevueParfumee">La Revue Parfumée</a></li>
-        <!--Ici se trouve ma barre de recherche -->
-        <input id="barre" type="text" placeholder="rechercher" />
-      </nav>
-    </header>
-    <!--Ici se trouve mon carrousel qui présente les nouveautés de mon site -->
-    <!-- Conteneur principal pour le carrousel -->
-    <div class="container">
+<?php require $_SERVER['DOCUMENT_ROOT']."/partials/head.php" ?>
+<?php require $_SERVER['DOCUMENT_ROOT']."/partials/header.php" ?>
+
+<div class="container">
       <!-- Élément carrousel -->
       <div class="carousel">
         <!-- Conteneur interne pour les diapositives -->
@@ -132,6 +89,5 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+
+<?php require $_SERVER['DOCUMENT_ROOT']."/partials/footer.php" ?>

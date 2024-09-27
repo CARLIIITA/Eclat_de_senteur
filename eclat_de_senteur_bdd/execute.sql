@@ -4,22 +4,22 @@ CREATE DATABASE eclat_de_senteur;
 
 use eclat_de_senteur;
 
-source C:\Users\utilisateur\Documents\eclat_de_senteur\user.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\user.sql
 describe user;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\categorie.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\categorie.sql
 describe categorie;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\product.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\product.sql
 describe product;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\command.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\command.sql
 describe command;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\command_line.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\command_line.sql
 describe command_line;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\review.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\review.sql
 describe review;
-source C:\Users\utilisateur\Documents\eclat_de_senteur\cart.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\cart.sql
 describe cart;
 
 -- fake datas
-source C:\Users\utilisateur\Documents\eclat_de_senteur\fake-datas\execute.sql
+source C:\Users\utilisateur\Documents\Eclat_de_senteur\eclat_de_senteur_bdd\fake-datas\execute.sql
 
 

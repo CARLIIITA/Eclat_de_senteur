@@ -7,8 +7,9 @@
        </div>
     <!--Ici se trouve mon icone du panier -->
        <div  class="panier">
-            <img id="iconepanier" src="/assets/icones/iconecaddie.png" alt="iconepanier">
-            <p class="textepanier">Mon panier</p>  
+            <a href="/cart"><img id="iconepanier" src="/assets/icones/iconecaddie.png" alt="iconepanier"></a>
+            <!-- <p class="textepanier">Mon panier</p> -->
+            <p class="textepanier"><?=isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; ?></p>
        </div>
     </div>
     <!--Ici se trouve mes boutons se connecter et s'inscrire -->

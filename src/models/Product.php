@@ -18,7 +18,7 @@ $getAllProducts = function () use($db) {
 
 // $getProductByCategorie = function  () use($db) {};
 
-$getProductById = function(int $id) use ($db){
-    $product = $db->query("SELECT * FROM product id = '$id'");
-    return $product->fetch_row();
+$getProductById = function($id) use ($db){
+    $product = $db->query("SELECT * FROM product WHERE id = '$id'");
+    return $product->fetch_assoc();
 };

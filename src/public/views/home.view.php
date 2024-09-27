@@ -88,8 +88,7 @@
             ?>
                 <!-- <div class="column"> -->
                 <div class="card">
-                 <img
-                        src="../assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
+                 <img src="../assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
                         alt="BrumeVsBareVanilla"
                         style="width: 100%" /> 
                     <h3><?=$product['name'] ?></h3>
@@ -100,7 +99,6 @@
                     <a href="/?addProduct=<?= $product['id'] ?>">Ajouter au panier</a>
                 </div>
                 <!-- </div> -->
-
             <?php endforeach; ?>
         </div>
       </div>

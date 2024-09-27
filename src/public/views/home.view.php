@@ -30,8 +30,7 @@
       </div>
       <!-- Ici se trouve l'ensemble de mes cards presentant nos coups de coeurs -->
       <div class="Cpdecoeurcards">
-        <div class="row">
-          <div class="column">
+          <!-- <div class="cards">
             <div class="card">
               <img
                 src="/assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
@@ -46,8 +45,6 @@
               </p>
               <p><button>Ajouter au panier</button></p>
             </div>
-          </div>
-          <div class="column">
             <div class="card">
               <img
                 src="/assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
@@ -59,8 +56,7 @@
               <p>Some text about the jeans..</p>
               <p><button>Ajouter au panier</button></p>
             </div>
-          </div>
-          <div class="column">
+          
             <div class="card">
               <img
                 src="/assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
@@ -71,9 +67,8 @@
               <p class="price">$19.99</p>
               <p>Some text about the jeans..</p>
               <p><button>Ajouter au panier</button></p>
-            </div>
-          </div>
-          <div class="column">
+            </div> -->
+<!-- 
             <div class="card">
               <img
                 src="/assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
@@ -84,8 +79,29 @@
               <p class="price">$19.99</p>
               <p>Some text about the jeans..</p>
               <p><button>Ajouter au panier</button></p>
-            </div>
+            </div> -->
+        
           </div>
+        <div class="cards">
+            <?php
+            foreach ($products as $product):
+            ?>
+                <!-- <div class="column"> -->
+                <div class="card">
+                 <img
+                        src="../assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
+                        alt="BrumeVsBareVanilla"
+                        style="width: 100%" /> 
+                    <h3><?=$product['name'] ?></h3>
+                    <p class="price"><?= $product['price'] ?></p>
+                    <p>
+                        <?= $product['description'] ?>
+                    </p>
+                    <a href="/?addProduct=<?= $product['id'] ?>">Ajouter au panier</a>
+                </div>
+                <!-- </div> -->
+
+            <?php endforeach; ?>
         </div>
       </div>
     </div>

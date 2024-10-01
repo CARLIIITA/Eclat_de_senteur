@@ -16,4 +16,4 @@ if(isset($_GET['delete'])){
     }
     header('location: /cart');
 }
-require '../public/views/cart.view.php';
+require 'views/cart.view.php';

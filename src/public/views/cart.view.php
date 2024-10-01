@@ -2,14 +2,13 @@
 <?php require $_SERVER['DOCUMENT_ROOT']."/partials/header.php" ?>
 <div class="cards">
     <?php if ($totalPrice === 0): ?>
-        <p class="no-product">Vous avez aucun produit dans votre panier</p>
+        <p class="no-product">Vous n'avez aucun produit dans votre panier</p>
     <?php else: ?>
         <?php
         foreach ($_SESSION['cart'] as $product): ?>
             <div class="card">
                 <img
-                    src="../assets/Victoria’s Secret Autumn Shore Fragrance Body Mist Spray Splash 8_4 Oz.jpg"
-                    alt="BrumeVsBareVanilla" />
+                    src="<?=$product['img']?>" />
                 <h3><?= $product['name'] ?></h3>
                 <p class="price"><?= $product['price'] ?></p>
                 <p>

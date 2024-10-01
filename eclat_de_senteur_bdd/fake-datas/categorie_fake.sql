@@ -4,7 +4,8 @@ INSERT INTO categorie (name) VALUES
 ('Eau de Toilette'),
 ('Brume pour le Corps'),
 ('Lotion Hydratante'),
-('Huile pour le Corps');
+('Huile pour le Corps'),
+('Musc');
 -- ("Brume pour le corps"), 
 -- ("Parfum pour femme"),
 -- ("Parfum pour homme"),

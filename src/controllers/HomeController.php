@@ -11,4 +11,4 @@ if(isset($_GET['addProduct'])){
     }
 }
 
-require '../public/views/home.view.php';
+require 'views/home.view.php';

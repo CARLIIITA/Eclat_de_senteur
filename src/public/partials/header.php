@@ -3,7 +3,7 @@
     <div id="head">
     <!--Ici se trouve mon Logo -->
         <div>
-            <img id = "logo" src="/assets/logo/parfumLogo.png" alt="logo">   
+            <img id = "logo"src="/assets/logo/parfumLogo.png" alt="logo">   
        </div>
     <!--Ici se trouve mon icone du panier -->
        <div  class="panier">
@@ -21,11 +21,10 @@
      </div>
     <!--Ici commence ma nav -->
 <nav id="naviguation">
-            <li><a href="#Parfums">Parfums</a></li>
+            <li><a href="/perfume">Parfums</a></li>
             <li><a href="#Brumes">Brumes</a></li>
             <li><a href="#Huiles">Huiles</a></li>
             <li><a href="#Muscs">Muscs</a></li>
-            <li><a href="#LaRevueParfumee">La Revue Parfumée</a></li>
         <!--Ici se trouve ma barre de recherche -->
         <input id="barre" type="text" placeholder="rechercher">
 </nav>  

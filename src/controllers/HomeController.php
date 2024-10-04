@@ -1,13 +1,14 @@
 <?php
 require '../models/Product.php';
+
 $products = $getAllProducts();
 
-if(isset($_GET['addProduct'])){
-    $product = $getProductById($_GET['addProduct']);
-    if(!isset($_SESSION["cart"])){
-        $_SESSION["cart"] = array($product);
+if(isset($_GET['ajouter'])){
+    $product = $getProductById($_GET['ajouter']);
+    if(!isset($_SESSION["panier"])){
+        $_SESSION["panier"] = array($product);
     } else {
-        $_SESSION["cart"][] = $product;
+        $_SESSION["panier"][] = $product;
     }
 }
 

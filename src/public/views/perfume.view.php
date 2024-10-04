@@ -1,5 +1,9 @@
 <?php require $_SERVER['DOCUMENT_ROOT']."/partials/head.php" ?>
 <?php require $_SERVER['DOCUMENT_ROOT']."/partials/header.php" ?>
+
+<div class="visuelParfum">
+    <img src="/assets/themes/VisuelParfum.gif" alt="VisuelParfum" />
+</div>
 <?php
             foreach ($parfums as $parfum):
                 // var_dump($parfum);

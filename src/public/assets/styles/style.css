@@ -12,7 +12,7 @@ nav li a {
 	text-decoration: none;
 	color: black;
 }
-.boutonsDoubles button {
+.boutonsDoubles .button {
 	background-color: #ffffff;
 	border: 1px solid rgb(0, 0, 0);
 	color: rgb(0, 0, 0);
@@ -25,6 +25,7 @@ nav li a {
 	clear: both;
 	display: table;
 }
+
 #groupebouton {
 	padding-left: 82%;
 	margin-bottom: 3%;
@@ -297,4 +298,73 @@ li {
 		display: block;
 		margin-bottom: 20px;
 	}
+}
+
+body {
+	/* height: 100vh; */
+	/* background: black; */
+}
+
+#inscription, #connexion {
+	padding: 75px;
+	/* background-image: url('../themes/inscriptionimgbackground.png'); */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	height:100vh;
+	/* position: relative; */
+	/* z-index:1; */
+	/* background:red; */
+	/* background-size: fit; */
+	display: flex;
+	align-items: center;
+}
+
+.visuel_parfum {
+	height: 1400px;
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	top:0;
+	bottom:0;
+	object-fit: cover;
+	margin:0 auto;
+	
+}
+
+.form {
+	position: relative;
+	z-index:1;
+	width: 980px;
+	/* background:red; */
+	margin:0 auto;
+	/* margin-top:275px; */
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	height: 100%;
+	gap:10px;
+	
+}
+
+.form input {
+	width: 300px;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+
+.form-control {
+	display: flex;
+	/* padding:30px; */
+	flex-direction: column;
+}
+
+.form-btn {
+	width: 300px;
+	background: #2C2C2C;
+	color:white;
+	border-radius: 5px;
+	padding:8px 10px;
+	cursor:pointer;
 }

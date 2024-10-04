@@ -43,7 +43,7 @@
                     <p>
                         <?= $product['description'] ?>
                     </p>
-                    <a href="/?addProduct=<?= $product['id'] ?>">Ajouter au panier</a>
+                    <a href="/?ajouter=<?= $product['id'] ?>">Ajouter au panier</a>
                 </div>
                 <!-- </div> -->
             <?php endforeach; ?>

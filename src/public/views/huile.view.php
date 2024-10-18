@@ -5,8 +5,7 @@
                 // var_dump($parfum);
             ?>
               <div class="card">
-                 <img src="<?=$huile['img'];?>"
-                        style="width: 100%" /> 
+                 <img src="<?=$huile['img'];?>" /> 
                     <h3><?=$huile['name'] ?></h3>
                     <p class="price"><?= $huile['price'] ?></p>
                     <p>

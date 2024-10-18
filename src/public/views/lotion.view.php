@@ -4,8 +4,7 @@
             foreach ($lotions as $lotion):
             ?>
               <div class="card">
-                 <img src="<?=$lotion['img'];?>"
-                        style="width: 100%" /> 
+                 <img src="<?=$lotion['img'];?>" /> 
                     <h3><?=$lotion['name'] ?></h3>
                     <p class="price"><?= $lotion['price'] ?></p>
                     <p>

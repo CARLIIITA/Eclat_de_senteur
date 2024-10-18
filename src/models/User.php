@@ -58,18 +58,15 @@ $inscription = function($user) use ($db) {
     if (!filter_var($user['email'], FILTER_VALIDATE_EMAIL)) {
         throw new InvalidArgumentException("L'adresse e-mail n'est pas valide.");
     }
-
     // Vérification de la non-vacuité du nom et du mot de passe
     if (empty($user['nom']) || empty($user['motDePasse'])) {
         throw new InvalidArgumentException("Le nom et le mot de passe ne peuvent pas être vides.");
     }
-
     // Vérification si l'utilisateur existe déjà dans la base de données
     $stmt = $db->prepare("SELECT id FROM user WHERE email = ?");
     if (!$stmt) {
         throw new RuntimeException("Échec de la préparation de la requête : " . $db->error);
     }
-
     // Liaison des paramètres
     $stmt->bind_param("s", $user['email']);
     $stmt->execute();

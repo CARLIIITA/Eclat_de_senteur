@@ -30,3 +30,4 @@ $getProductById = function($id) use ($db){
     $product = $db->query("SELECT * FROM product WHERE id = '$id'");
     return $product->fetch_assoc();
 };
+

@@ -1,3 +1,5 @@
+
+<?php ob_start(); ?>
 <div id="groupebouton">
     <div class="boutonsDoubles">
         <?php if(isset($_SESSION['user'])): ?>
@@ -8,3 +10,5 @@
         <?php endif; ?>
     </div>
 </div>
+
+<?php $buttonsConnexionDeconnexion = ob_get_clean();?>

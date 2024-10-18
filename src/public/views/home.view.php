@@ -36,14 +36,15 @@
             ?>
                 <!-- <div class="column"> -->
                 <div class="card">
-                 <img src="<?=$product['img'];?>"
-                        style="width: 100%" /> 
-                    <h3><?=$product['name'] ?></h3>
-                    <p class="price"><?= $product['price'] ?></p>
-                    <p>
-                        <?= $product['description'] ?>
-                    </p>
-                    <a href="/?ajouter=<?= $product['id'] ?>">Ajouter au panier</a>
+                 <img src="<?=$product['img'];?>" /> 
+                 <div class="description_product">
+                   <h3><?=$product['name'] ?></h3>
+                   <p class="price"><?= $product['price'] ?></p>
+                   <p>
+                       <?= $product['description'] ?>
+                   </p>
+                 </div>
+                  <a href="/?ajouter=<?= $product['id'] ?>">Ajouter au panier</a>
                 </div>
                 <!-- </div> -->
             <?php endforeach; ?>

@@ -1,6 +1,5 @@
+<?php require $_SERVER['DOCUMENT_ROOT']."/partials/header.php" ?>
 <?php require $_SERVER['DOCUMENT_ROOT']."/partials/head.php" ?>
-<?php require $_SERVER['DOCUMENT_ROOT']."/partials/nav.php" ?>
-
 <div id="inscription">
     <!-- <img class="visuel_parfum" src="../assets/themes/inscriptionimgbackground.png" alt=""> -->
     <form action="#" method="post" class="form">

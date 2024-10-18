@@ -5,8 +5,7 @@
                 // var_dump($parfum);
             ?>
               <div class="card">
-                 <img src="<?=$brume['img'];?>"
-                        style="width: 100%" /> 
+                 <img src="<?=$brume['img'];?>" /> 
                     <h3><?=$brume['name'] ?></h3>
                     <p class="price"><?= $brume['price'] ?></p>
                     <p>
@@ -18,5 +17,4 @@
         </div>
       </div>
     </div>
-
 <?php require $_SERVER['DOCUMENT_ROOT']."/partials/footer.php" ?>

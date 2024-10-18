@@ -3,6 +3,9 @@
 <div id="connexion">
     <!-- <img class="visuel_parfum" src="../assets/themes/inscriptionimgbackground.png" alt=""> -->
     <form action="#" method="post" class="form">
+        <?php if(isset($requiredAuthMessage)):?>
+           <p class="message-info"><?=$requiredAuthMessage?></p>
+        <?php endif;?>
         <div class="form-control">
             <label for="email">Adresse Mail</label>
             <input type="text" name="email" placeholder="example@mail.com">

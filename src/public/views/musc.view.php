@@ -4,8 +4,7 @@
             foreach ($muscs as $musc):
             ?>
               <div class="card">
-                 <img src="<?=$musc['img'];?>"
-                        style="width: 100%" /> 
+                 <img src="<?=$musc['img'];?>" /> 
                     <h3><?=$musc['name'] ?></h3>
                     <p class="price"><?= $musc['price'] ?></p>
                     <p>
